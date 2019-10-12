@@ -6,7 +6,7 @@ Repositorio dedicado a almacenar los ejercicios relacionados con la materia de E
 
 ## Última modificación:
 
-Se agregó la Versión 1.0 de pilas la cual fue contruida con una lista simplemente enlazada.
+Se agregó la Versión 1.0 de colas la cual fue contruida con una lista circular doblemente enlazada para agilizar los tiempos de encolamiento y desencolamiento.
 ## Autores
 
 * **Edgar Alejandro Ramírez Fuentes** - *Página Web: *[EdgarRamirezWeb](https://edgarramirezweb.netlify.com/) - Perfil de GitHub: [EdgarRamirezFuentes](https://github.com/EdgarRamirezFuentes)
