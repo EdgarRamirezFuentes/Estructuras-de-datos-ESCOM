@@ -15,8 +15,8 @@
  + EliminarNodoAlInicio
 */
 
-#ifndef __LISTA-SIMPLEMENTE-ENLAZADA_H__
-#define __LISTA-SIMPLEMENTE-ENLAZADA_H__
+#ifndef __LISTASIMPLEMENTEENLAZADA_H__
+#define __LISTASIMPLEMENTEENLAZADA_H__
 
 #include <stdio.h>
 #include <stdlib.h>

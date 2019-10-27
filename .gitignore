@@ -7,6 +7,9 @@
 *.obj
 *.elf
 
+#Creados por vi
+*c.swp
+
 # Linker output
 *.ilk
 *.map
