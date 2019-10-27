@@ -7,5 +7,5 @@ a.out: main.o lista-contigua.o
 run: a.out
 	./a.out
 clean:
-	rm -f a.out main.o lista-contigua.o
+	rm -f a.out main.o lista-contigua.o *.swp
 
