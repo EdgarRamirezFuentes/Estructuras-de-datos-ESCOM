@@ -15,8 +15,8 @@ struct Nodo* BuscarDato(struct Nodo*, int);
 struct Nodo* BuscarPadre(struct Nodo*,struct Nodo*);
 struct Nodo* EliminarDato(struct Nodo*, int);
 int EsHoja(struct Nodo*);
-int TieneSoloHijoDerecho(struct Nodo*);
+int NoTieneHijoIzquierdo(struct Nodo*);
 int TieneSoloHijoIzquierdo(struct Nodo*);
-int TieneDosHijos(struct Nodo*);
 struct Nodo* BuscarElMasPequenioDeLosGrandes(struct Nodo*);
+void mostrar(struct Nodo*);
 #endif
