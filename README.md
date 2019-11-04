@@ -2,11 +2,12 @@
 
 Repositorio dedicado a almacenar los ejercicios relacionados con la materia de Estructuras de datos en C.
 
-## Última fecha de modificación: 12 / 10 / 2019.
+## Última fecha de modificación: 04 / 11 / 2019.
 
 ## Última modificación:
 
-Se agregó la Versión 1.0 de colas la cual fue contruida con una lista circular doblemente enlazada para agilizar los tiempos de encolamiento y desencolamiento.
+Se implementaron las funciones básicas de un Árbol Binario de Búsqueda (Agregar, Buscar, Eliminar y mostrar).
+
 ## Autores
 
 * **Edgar Alejandro Ramírez Fuentes** - *Página Web: *[EdgarRamirezWeb](https://edgarramirezweb.netlify.com/) - Perfil de GitHub: [EdgarRamirezFuentes](https://github.com/EdgarRamirezFuentes)
