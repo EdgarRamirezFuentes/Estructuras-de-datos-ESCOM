@@ -3,20 +3,25 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "lista-circular-d.h"
 
-struct Nodo {
+struct Arbol {
 	int dato;
-	struct Nodo *izquierda;
-	struct Nodo *derecha;
+	struct Arbol *izquierda;
+	struct Arbol *derecha;
 };
 
-struct Nodo* AgregarDato(struct Nodo*, int);
-struct Nodo* BuscarDato(struct Nodo*, int);
-struct Nodo* BuscarPadre(struct Nodo*,struct Nodo*);
-struct Nodo* EliminarDato(struct Nodo*, int);
-int EsHoja(struct Nodo*);
-int NoTieneHijoIzquierdo(struct Nodo*);
-int TieneSoloHijoIzquierdo(struct Nodo*);
-struct Nodo* BuscarElMasPequenioDeLosGrandes(struct Nodo*);
-void mostrar(struct Nodo*);
+extern struct Arbol *raiz;
+extern struct Lista *ColaBFS;
+
+struct Arbol* AgregarDato(struct Arbol*, int);
+struct Arbol* BuscarDato(struct Arbol*, int);
+struct Arbol* BuscarPadre(struct Arbol*,struct Arbol*);
+struct Arbol* EliminarDato(struct Arbol*, int);
+int EsHoja(struct Arbol*);
+int NoTieneHijoIzquierdo(struct Arbol*);
+int TieneSoloHijoIzquierdo(struct Arbol*);
+struct Arbol* BuscarElMasPequenioDeLosGrandes(struct Arbol*);
+void mostrar(struct Arbol*);
+void BFS(struct Arbol *, struct Lista *);
 #endif
