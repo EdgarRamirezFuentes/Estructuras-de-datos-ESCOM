@@ -4,22 +4,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int valorPeek;
+int valorDequeue;
 
 struct Cola {
     int total;
     struct Nodo *datos;
 };
 
-void 
-enqueue(struct Cola *cola, int dato);
+void enqueue(struct Cola *, int);
 
-void 
-dequeue(struct Cola *cola);
+int dequeue(struct Cola *);
 
-int 
-peek(struct Cola *cola);
+int peek(struct Cola *);
 
-void 
-MostrarCola(struct Cola *cola);
+void MostrarCola(struct Cola *);
+
+int isEmpty(struct Cola *);
 
 #endif

@@ -5,13 +5,14 @@ int main(void) {
     cola -> total = 0;
     cola -> datos = NULL;
     enqueue(cola, 5);
-    printf("El dato en el tope de la cola es: %d\n", peek(cola));
-    MostrarCola(cola);
     enqueue(cola, 10);
-    printf("El dato en el tope de la cola es: %d\n", peek(cola));
+    enqueue(cola, 15);
+    enqueue(cola, 20);
     MostrarCola(cola);
     dequeue(cola);
-    printf("El dato en el tope de la cola es: %d\n", peek(cola));
     MostrarCola(cola);
+    enqueue(cola, 5);
+    MostrarCola(cola);
+    
     return 0;
 }
