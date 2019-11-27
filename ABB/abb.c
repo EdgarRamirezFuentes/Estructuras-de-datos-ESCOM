@@ -1,5 +1,4 @@
 #include "abb.h"
-#include "lista-circular-d.h"
 
 struct Arbol* AgregarDato(struct Arbol *raiz, int dato){
 	struct Arbol *nuevoArbol = (struct Arbol*) malloc(sizeof(struct Arbol));
@@ -167,6 +166,7 @@ void mostrar (struct Arbol *raiz)
 {
 	if (raiz == NULL)
 	{
+		puts("\n");
 		return;
 	}
 	mostrar (raiz->izquierda);
@@ -174,20 +174,3 @@ void mostrar (struct Arbol *raiz)
 	mostrar (raiz->derecha);
 }
 
-void BFS(struct Arbol *arbol, struct Lista *lista){
-	printf("%d, ", arbol -> dato);
-	if(arbol -> izquierda != NULL){
-		lista = AgregarNuevoListaAlFinal(lista, arbol -> izquierda);
-	}	
-	if(arbol -> derecha != NULL){
-		lista = AgregarNuevoListaAlFinal(lista, arbol -> derecha);
-	}
-	if(lista == NULL){
-		printf("\n");
-		return;
-	}
-	struct Arbol *nuevaRaiz = lista -> dato;
-	lista = EliminarListaAlInicio(lista);
-	BFS(nuevaRaiz, lista);
-	
-}

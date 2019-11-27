@@ -3,7 +3,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "lista-circular-d.h"
 
 struct Arbol {
 	int dato;
@@ -23,5 +22,4 @@ int NoTieneHijoIzquierdo(struct Arbol*);
 int TieneSoloHijoIzquierdo(struct Arbol*);
 struct Arbol* BuscarElMasPequenioDeLosGrandes(struct Arbol*);
 void mostrar(struct Arbol*);
-void BFS(struct Arbol *, struct Lista *);
 #endif
