@@ -3,32 +3,19 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
-struct Nodo {
-	int dato;
-	struct Nodo *siguiente;
-};
+#include "lista-simplemente-enlazada.h"
 
 struct Pila {
     int total;
-    struct Nodo *datos;
+    struct NodoLista *datos;
 };
 
-void
-push(struct Pila *pila, int dato);
+int valorPop;
+int valorPeek;
 
-int 
-peek(struct Pila *pila);
-
-int 
-pop(struct Pila *pila);
-
-struct Nodo* 
-AgregarNodoAlInicio(struct Nodo *nodo, int dato);
-
-struct Nodo*
-EliminarNodoAlInicio(struct Nodo *nodo);
-
-void MostrarPila(struct Pila *pila);
-
+void push(struct Pila *,int);
+int pop(struct Pila *);
+int peek(struct Pila *);
+int isEmpty(struct Pila *);
+void MostrarPila(struct Pila *);
 #endif
