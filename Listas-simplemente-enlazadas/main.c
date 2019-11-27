@@ -12,6 +12,10 @@ main(void){
 	nodo = EliminarNodo(nodo, 1);
 	MostrarLista(nodo);
 	nodo = EliminarNodo(nodo, 2);
+	nodo = AgregarNuevoNodo(nodo,2009,1);
+	nodo = AgregarNuevoNodo(nodo,2010,2);
+	nodo = EliminarNodo(nodo, 2);
+	nodo = AgregarNuevoNodo(nodo,2011,2);
 	MostrarLista(nodo);
 	return 0;
 }
